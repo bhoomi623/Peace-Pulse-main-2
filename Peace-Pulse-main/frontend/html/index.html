@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stress Predictor</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-brand">Peace Pulse</a>
+            <ul class="navbar-menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="panel prediction-panel">
+            <h1>Stress Level Predictor</h1>
+            <form id="stressForm">
+                <label for="sr">Snoring Rate:</label>
+                <input type="number" id="sr" name="sr" step="0.01" required>
+
+                <label for="rr">Respiration Rate:</label>
+                <input type="number" id="rr" name="rr" step="0.01" required>
+
+                <label for="t">Body Temperature:</label>
+                <input type="number" id="t" name="t" step="0.01" required>
+
+                <label for="lm">Limb Movement:</label>
+                <input type="number" id="lm" name="lm" step="0.01" required>
+
+                <label for="bo">Blood Oxygen:</label>
+                <input type="number" id="bo" name="bo" step="0.01" required>
+
+                <label for="rem">Eye Movement:</label>
+                <input type="number" id="rem" name="rem" step="0.01" required>
+
+                <label for="sh">Sleeping Hours:</label>
+                <input type="number" id="sh" name="sh" step="0.01" required>
+
+                <label for="hr">Heart Rate:</label>
+                <input type="number" id="hr" name="hr" step="0.01" required>
+
+                <button type="submit">Predict Stress Level</button>
+            </form>
+        </div>
+
+        <div class="panel info-panel">
+            <h1 class="dark-heading">Legal Values & Stress Levels</h1>
+            <ul>
+                <li><strong>Snoring Rate:</strong> 0-100</li>
+                <li><strong>Respiration Rate:</strong> 0-30</li>
+                <li><strong>Body Temperature:</strong> 80-100°F</li>
+                <li><strong>Limb Movement:</strong> 0-20</li>
+                <li><strong>Blood Oxygen:</strong> 80-100%</li>
+                <li><strong>Eye Movement:</strong> 0-120</li>
+                <li><strong>Sleeping Hours:</strong> 0-10 hours</li>
+                <li><strong>Heart Rate:</strong> 50-100 bpm</li>
+            </ul>
+            <h3>Stress Levels:</h3>
+            <ul>
+                <li><strong>Not Stressed:</strong> 0-1</li>
+                <li><strong>Slightly Stressed:</strong> 2-3</li>
+                <li><strong>Overly Stressed:</strong> 4-5</li>
+            </ul>
+            <div id="result"></div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2024 PeacePulse. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="../javascript/app.js"></script>
+</body>
+
+</html>
